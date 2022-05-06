@@ -5,17 +5,18 @@ import { Navbar, NavLink } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 import Signinpage from './Pages/Signinpage.js';
 import Homepage from "./Pages/Homepage.js";
+import Goodjob from './Pages/Goodjob.js'
 
 
 // 2nd component of page
 function App() {
     return (
-        <div>
+        <div name="app">
             <header>
-                <Navbar bg="dark" variant="dark">
+                <Navbar className="navbar">
                     <Container>
-                        <Navbar.Brand href='/'>Monstera </Navbar.Brand>
-                        <NavLink href="/signin">Sign In</NavLink>
+                        <Navbar.Brand href='/'>Green Thumb Club </Navbar.Brand>
+                        <NavLink className="signin" href="/signin"><b>Sign In</b></NavLink>
                     </Container>
                 </Navbar>
             </header>
@@ -25,6 +26,7 @@ function App() {
                         <Routes>
                             <Route path='/' element={<Homepage />} />
                             <Route path='/signin' element={<Signinpage />} />
+                            <Route path='/goodjob' element={<Goodjob />} />
                         </Routes>
                     </Router>
                 </Container>

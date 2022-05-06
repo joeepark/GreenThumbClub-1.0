@@ -24,7 +24,7 @@ module.exports = {
             },
             {
                 test: /\.(sass|less|css)$/,
-                use: ["style-loader", "css-loader"]
+                use: ["style-loader", "css-loader", "sass-loader"]
             },
             {
                 test: /\.(png|svg|jpg|jpeg|gif|ico)$/,
@@ -42,7 +42,7 @@ module.exports = {
         compress: true,
         historyApiFallback: true,
         proxy: {
-            '/api' : {
+            '/api': {
                 target: 'http://localhost:3000/',
                 secure: false,
             },

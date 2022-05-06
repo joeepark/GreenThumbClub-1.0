@@ -1,39 +1,45 @@
 const data = {
+    users: [
+        {
+            username: 'joe',
+            password: '1234'
+        }
+    ],
     products: [
         {
-            name: 'plant1',
-            slug: 'plant1',
+            name: 'Monstera',
+            slug: 'monstera',
             category: 'indoor/outdoor',
-            image: '/images/Monstera1.jpeg',
-            price: 100,
+            image: '/images/Monstera.jpeg',
+            price: '$100',
             countInStock: 20,
             description: 'info1',
 
         },
         {
-            name: 'plant2',
-            slug: 'plant2',
+            name: 'Peperomia',
+            slug: 'peperomia',
             category: 'indoor/outdoor',
-            image: 'images/Monstera1.jpeg',
-            price: 100,
+            image: 'images/Peperomia.jpeg',
+            price: '$20',
             countInStock: 20,
             description: 'info1',
         },
         {
-            name: 'plant3',
-            slug: 'plant3',
+            name: 'Pitcher',
+            slug: 'pitcher',
             category: 'indoor/outdoor',
-            image: 'images/Monstera1.jpeg',
-            price: 100,
+            image: 'images/Pitcher.jpeg',
+            price: '$1000',
             countInStock: 20,
             description: 'info1',
         },
         {
-            name: 'plant4',
-            slug: 'plant4',
+            name: 'Schefflera',
+            slug: 'schefflera',
             category: 'indoor/outdoor',
-            image: 'images/Monstera1.jpeg',
-            price: 100,
+            image: 'images/Schefflera.jpeg',
+            price: '$500',
             countInStock: 20,
             description: 'info1',
         },
